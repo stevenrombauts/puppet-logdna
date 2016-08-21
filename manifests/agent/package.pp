@@ -24,7 +24,10 @@ class logdna::agent::package(
       location => 'http://repo.logdna.com',
       release  => 'stable',
       repos    => 'main',
-      key      => '02E0C689A9FCC8110A8FECB9C1BF174AEF506BE8'
+      key      => {
+          id     => '02E0C689A9FCC8110A8FECB9C1BF174AEF506BE8',
+          source => 'http://repo.logdna.com/logdna.gpg'
+      }
     }
 
   }
