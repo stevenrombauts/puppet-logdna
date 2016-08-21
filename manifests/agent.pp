@@ -31,6 +31,7 @@ class logdna::agent(
   class { '::logdna::agent::config':
     config_file    => $config_file,
     logfiles       => $logfiles,
+    key            => $key,
     notify         => Class['::logdna::agent::service']
   }
 
