@@ -1,0 +1,32 @@
+{
+  "name": "stevenrombauts-logdna",
+  "version": "0.1.0",
+  "author": "Steven Rombauts",
+  "summary": "Puppet management module for LogDNA agent",
+  "license": "GPL-3.0",
+  "source": "https://github.com/stevenrombauts/puppet-logdna.git",
+  "project_page": "https://github.com/stevenrombauts/puppet-logdna",
+  "issues_url": "https://github.com/stevenrombauts/puppet-logdna/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.2.0 <5.0.0"},
+    {"name":"puppetlabs/apt","version_requirement":">= 1.8.0 <3.0.0"}
+  ],
+  "requirements": [
+    {
+      "name": "pe",
+      "version_requirement": "3.x"
+    },
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04"
+      ]
+    }
+  ]
+}
