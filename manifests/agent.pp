@@ -32,16 +32,16 @@ class logdna::agent(
   }
 
   class { '::logdna::agent::config':
-    config_file    => $config_file,
-    logdir         => $logdir,
-    key            => $key,
-    notify         => Class['::logdna::agent::service']
+    config_file => $config_file,
+    logdir      => $logdir,
+    key         => $key,
+    notify      => Class['::logdna::agent::service']
   }
 
   class { '::logdna::agent::service':
-    service_ensure    => $service_ensure,
-    service_name      => $service_name,
-    service_manage    => $service_manage
+    service_ensure => $service_ensure,
+    service_name   => $service_name,
+    service_manage => $service_manage
   }
 
 }
