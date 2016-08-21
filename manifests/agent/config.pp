@@ -1,17 +1,17 @@
 class logdna::agent::config(
   $config_file    = '/etc/logdna.conf',
-  $logfiles       = ['/var/log'],
+  $logdir         = ['/var/log'],
   $key            = undef
 ) {
 
   validate_string($key, $config_file)
-  validate_array($logfiles)
+  validate_array($logdir)
 
   if ! $key {
     fail('You must specify a valid LogDNA key!')
   }
 
-  $logdir = join($logfiles, ',')
+  $logdir_real = join($logdir, ',')
 
   file { 'logdna-agent':
     path    => $config_file,
