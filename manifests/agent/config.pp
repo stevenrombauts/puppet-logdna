@@ -11,7 +11,7 @@ class logdna::agent::config(
     fail('You must specify a valid LogDNA key!')
   }
 
-  $logdir = join(',', $logfiles)
+  $logdir = join($logfiles, ',')
 
   file { 'logdna-agent':
     path    => $config_file,
