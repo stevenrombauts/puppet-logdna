@@ -17,7 +17,7 @@ class logdna::agent::service(
 
   if $service_manage {
 
-    service { 'nginx':
+    service { 'logdna-agent':
       ensure     => $service_ensure,
       name       => $service_name,
       enable     => $service_enable,
