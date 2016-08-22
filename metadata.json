@@ -7,6 +7,7 @@
   "source": "https://github.com/stevenrombauts/puppet-logdna.git",
   "project_page": "https://github.com/stevenrombauts/puppet-logdna",
   "issues_url": "https://github.com/stevenrombauts/puppet-logdna/issues",
+  "tags": ["logdna", "monitoring", "logging"],
   "dependencies": [
     {"name":"puppetlabs/stdlib","version_requirement":">= 4.2.0 <5.0.0"},
     {"name":"puppetlabs/apt","version_requirement":">= 1.8.0 <3.0.0"}

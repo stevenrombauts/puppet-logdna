@@ -1,4 +1,4 @@
 /Vagrantfile
 /.vagrant
-
+/pkg
 /Gemfile.lock
