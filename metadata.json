@@ -1,6 +1,6 @@
 {
   "name": "stevenrombauts-logdna",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Steven Rombauts",
   "summary": "Puppet management module for LogDNA agent",
   "license": "GPL-3.0",
