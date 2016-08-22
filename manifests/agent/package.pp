@@ -1,5 +1,28 @@
+# Class: logdna::agent::package
+#
+# This module installs the LogDNA agent.
+#
+# Parameters:
+#   [*manage_repo*]
+#     Include official LogDNA agent repository to install the package from
+#     Default: true
+#
+#   [*package_name*]
+#     The name of the package to install
+#     Default: 'logdna-agent'
+#
+#   [*package_ensure*]
+#     What state the package should be in
+#     Default: present
+#
+# Actions:
+#  This module installs the LogDNA agent package.
+#
+# Sample Usage:
+#   This class file is not called directly
+#
 class logdna::agent::package(
-  $package_ensure = 'present',
+  $package_ensure = present,
   $package_name   = 'logdna-agent',
   $manage_repo    = true
 ) {

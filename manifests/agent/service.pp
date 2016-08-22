@@ -1,3 +1,26 @@
+# Class: logdna::agent::service
+#
+# This module manages the LogDNA agent service.
+#
+# Parameters:
+#   [*service_ensure*]
+#     What state the service should be in, running or stopped.
+#     Default: running
+#
+#   [*service_name*]
+#     Name of the service
+#     Default: 'logdna-agent'
+#
+#   [*service_manage*]
+#     Whether to manage the server through Puppet or not
+#     Default: true
+#
+# Actions:
+#  This module manages the LogDNA agent service.
+#
+# Sample Usage:
+#   This class file is not called directly
+#
 class logdna::agent::service(
   $service_ensure   = running,
   $service_name     = 'logdna-agent',
