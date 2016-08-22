@@ -1,4 +1,4 @@
-# LogDNA module for Puppet [![Build Status](https://travis-ci.org/stevenrombauts/puppet-logdna.svg?branch=master)](https://travis-ci.org/stevenrombauts/puppet-logdna) [![Puppet Forge](https://img.shields.io/puppetforge/v/stevenrombauts/logdna.svg?maxAge=2592000?style=flat-square)]()
+# LogDNA module for Puppet [![Build Status](https://travis-ci.org/stevenrombauts/puppet-logdna.svg?branch=master)](https://travis-ci.org/stevenrombauts/puppet-logdna) [![Puppet Forge](https://img.shields.io/puppetforge/v/stevenrombauts/logdna.svg?maxAge=2592000?style=flat-square)](https://forge.puppet.com/stevenrombauts/logdna)
 
 ## Module description
 
