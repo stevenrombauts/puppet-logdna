@@ -1,4 +1,4 @@
-# LogDNA module for Puppet
+# LogDNA module for Puppet [![Build Status](https://travis-ci.org/stevenrombauts/puppet-logdna.svg?branch=master)](https://travis-ci.org/stevenrombauts/puppet-logdna)
 
 ## Module description
 
