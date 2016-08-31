@@ -6,7 +6,15 @@ This module manages and installs the [LogDNA](https://logdna.com) agent.
 
 ## Operating System
 
-Currently only tested on Ubuntu.
+This module should work on has been tested on the following operating systems:
+
+* CentOS 7
+* Debian 7 (wheezy)
+* Debian 8 (jessie)
+* Ubuntu 14.04 (trusty)
+* Ubuntu 16.04 (xenial)
+
+It may work on most derivatives and different versions of the above listed systems.
 
 ## Usage
 
