@@ -6,7 +6,7 @@ This module manages and installs the [LogDNA](https://logdna.com) agent.
 
 ## Operating System
 
-This module should work on has been tested on the following operating systems:
+This module has been tested on the following operating systems:
 
 * CentOS 6
 * CentOS 7
