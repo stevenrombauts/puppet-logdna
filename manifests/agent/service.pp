@@ -30,6 +30,9 @@ class logdna::agent::service(
   validate_string($service_ensure, $service_name)
   validate_bool($service_manage)
 
+  Package['logdna-agent']
+    ~> Service['logdna-agent']
+
   $service_enable = $service_ensure ? {
     running => true,
     absent  => false,

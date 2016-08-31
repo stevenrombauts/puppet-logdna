@@ -30,29 +30,31 @@ class logdna::agent::package(
   validate_string($package_ensure, $package_name)
   validate_bool($manage_repo)
 
-  package { 'logdna-agent':
-    ensure => $package_ensure,
-    name   => $package_name
-  }
-
-  if $manage_repo {
-
-    include '::apt'
-
-    Exec['apt_update']
-      -> Package['logdna-agent']
-
-    ::apt::source { 'logdna-agent':
-      comment  => 'This is the official LogDNA agent repository',
-      location => 'http://repo.logdna.com',
-      release  => 'stable',
-      repos    => 'main',
-      key      => {
-          id     => '02E0C689A9FCC8110A8FECB9C1BF174AEF506BE8',
-          source => 'http://repo.logdna.com/logdna.gpg'
+  case $::osfamily {
+    'redhat': {
+      class { '::logdna::agent::package::redhat':
+        manage_repo    => $manage_repo,
+        package_ensure => $package_ensure,
+        package_name   => $package_name
       }
     }
+    'debian': {
+      class { '::logdna::agent::package::debian':
+        package_name   => $package_name,
+        package_ensure => $package_ensure,
+        manage_repo    => $manage_repo
+      }
+    }
+    default: {
+      if $manage_repo {
+        notice('Unable to manage LogDNA repository: unsupported operating system.')
+      }
 
+      package { 'logdna-agent':
+        ensure => $package_ensure,
+        name   => $package_name
+      }
+    }
   }
 
 }
