@@ -1,5 +1,9 @@
 # LogDNA module for Puppet [![Build Status](https://travis-ci.org/stevenrombauts/puppet-logdna.svg?branch=master)](https://travis-ci.org/stevenrombauts/puppet-logdna) [![Puppet Forge](https://img.shields.io/puppetforge/v/stevenrombauts/logdna.svg?maxAge=2592000?style=flat-square)](https://forge.puppet.com/stevenrombauts/logdna)
 
+## DEPRECATED
+
+This module is no longer maintained because LogDNA has now released an official Puppet module: [logdna/logdna](https://github.com/logdna/puppet-logdna).
+
 ## Module description
 
 This module manages and installs the [LogDNA](https://logdna.com) agent.  
